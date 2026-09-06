@@ -1,0 +1,38 @@
+/* Structural layout only — theme/colors are left to the host document. */
+
+.mobile-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+  max-width: 100%;
+}
+
+.mobile-categories__label {
+  margin: 0;
+}
+
+.mobile-categories__select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+/* Desktop: keep Quarto's margin category UI; hide the inline dropdown */
+@media (min-width: 768px) {
+  .mobile-categories {
+    display: none !important;
+  }
+}
+
+/* Mobile: hide duplicated margin categories when the inline filter is present */
+@media (max-width: 767px) {
+  body:has(.mobile-categories) #quarto-margin-sidebar .quarto-listing-category-title,
+  body:has(.mobile-categories) #quarto-margin-sidebar .quarto-listing-category {
+    display: none !important;
+  }
+}
