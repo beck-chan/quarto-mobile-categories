@@ -1,0 +1,5 @@
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v2/extension-schema.json
+
+classes:
+  mobile-categories:
+    description: "Inline dropdown that mirrors Quarto listing category filters for mobile. Place on a page with listing `categories: true`."

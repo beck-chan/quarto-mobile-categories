@@ -1,0 +1,26 @@
+{
+  "Mobile categories dropdown": {
+    "prefix": "mobile-categories",
+    "body": [
+      "::: {.mobile-categories}",
+      ":::"
+    ],
+    "description": "Insert the mobile listing-categories dropdown embed."
+  },
+  "Mobile categories with custom class": {
+    "prefix": "mobile-categories-styled",
+    "body": [
+      "::: {.mobile-categories .${1:my-filter-styles}}",
+      ":::"
+    ],
+    "description": "Insert the mobile categories dropdown with an extra theme class."
+  },
+  "Enable mobile-categories filter": {
+    "prefix": "mobile-categories-meta",
+    "body": [
+      "filters:",
+      "  - mobile-categories"
+    ],
+    "description": "Enable the mobile-categories filter in YAML front matter or _quarto.yml."
+  }
+}

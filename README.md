@@ -1,12 +1,10 @@
 # Quarto Mobile Categories Extension
 
-[Quarto listing category filters](https://quarto.org/docs/websites/website-listings.html#categories) live in the margin sidebar, which is awkward on small screens. This extension mirrors those categories as an inline dropdown you can place in the page body. Choosing an option calls Quarto's existing `quartoListingCategory` handler so filtering stays in sync.
+When enabled, [Quarto's category page filters]((https://quarto.org/docs/websites/website-listings.html#categories) ) display in the right margin on desktop, but are hidden by default on mobile. 
 
-On desktop the dropdown is hidden and the margin UI remains. On mobile the dropdown is shown and the margin category list is hidden when the embed is present.
+This extension allows you to embed a category filter as an inline drop-down for mobile view.
 
 ## Prerequisites
-
-Requires Quarto `>= 1.4.0` and a page with listing `categories: true` (so Quarto emits `.quarto-listing-category` in the margin).
 
 ## Install
 
@@ -25,7 +23,8 @@ filters:
 
 ### Example
 
-Enable listing categories, then embed the dropdown where it should appear on mobile:
+Appears on any page with listings and `categories: true` enabled.
+
 
 ```markdown
 ---
@@ -37,7 +36,7 @@ filters:
   - mobile-categories
 ---
 
-::: {.mobile-categories}
+::: {.posts}
 :::
 ```
 
@@ -53,8 +52,6 @@ Extra classes on the div are preserved if you want to style the embed in your th
 | Class | Notes |
 |---|---|
 | `.mobile-categories` | Required fenced-div class that becomes the dropdown |
-
-The extension ships structural CSS only (layout, mobile/desktop visibility). Colors, fonts, and borders are left to your project theme.
 
 ## Support
 
