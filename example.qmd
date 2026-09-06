@@ -2,15 +2,16 @@
 title: "Mobile Categories Example"
 listing:
   - id: posts
-    contents: "posts"
     type: default
+    contents: posts
     categories: true
 filters:
   - mobile-categories
 ---
 
-On mobile, use the dropdown below to filter the listing. On desktop the margin
-category UI remains and this embed is hidden.
+On mobile, use embedded dropdown to filter listing posts.
+
+On desktop the margin category filter panel displays as usual and the embed is hidden.
 
 ::: {.mobile-categories}
 :::

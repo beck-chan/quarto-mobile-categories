@@ -1,4 +1,6 @@
 /.quarto/
+/_site/
 /example.html
 /example_files/
-/_site/
+
+**/*.quarto_ipynb
